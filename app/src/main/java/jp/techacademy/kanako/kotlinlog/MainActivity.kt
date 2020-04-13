@@ -12,13 +12,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val human = Human("タカハシ", 22,"music")
-
+        val human2 = Human("タナカ",20,"comics")
 
         human.say()
-        Log.d("kotlintest", "私の名前は" + human.name + "です。")
-        Log.d("kotlintest", "年は" + human.age + "歳です。")
-        Log.d("kotlintest","私は" + human.hobby + "について考える。")
-     human.think()
+        Log.d("kotlintest", "私の名前は" + human.name + "です。" + "年は" + human.age + "歳です。")
+        //Log.d("kotlintest","私は" + human.hobby + "について考える。")
+        human.think()
+
+        human2.say()
+        Log.d("kotlintest", "私の名前は" + human2.name + "です。" + "年は" + human2.age + "歳です。")
+        human2.think()
 
     }
 }
